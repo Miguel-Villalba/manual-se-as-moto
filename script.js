@@ -131,12 +131,6 @@ const createMediaElement = (item) => {
       "aria-label",
       `${item.title} (video en bucle, sin audio)`
     );
-    if (
-      item.file === "aminorar marcha+.mp4" ||
-      item.file === "acelerar marcha.mp4"
-    ) {
-      wrapper.classList.add("top-align");
-    }
     wrapper.appendChild(video);
   } else {
     const img = document.createElement("img");
