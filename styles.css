@@ -267,18 +267,11 @@ main {
 .media video {
   width: 100%;
   height: 100%;
+  object-fit: contain; /* ver completo aunque haya barras */
   display: block;
   border: none;
   outline: none;
   border-radius: 10px;
-}
-
-.media img {
-  object-fit: contain; /* mostrar foto completa */
-}
-
-.media video {
-  object-fit: cover; /* mantener sin barras negras */
 }
 
 .card h2 {
