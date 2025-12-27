@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Señas de Moteros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__text">
+        <p class="eyebrow">Guía rápida</p>
+        <h1>Señas para rodar en grupo</h1>
+        <p class="subtitle">
+          Manual visual para aprender las señas de los moteros.
+        </p>
+        <div class="chips">
+          <span class="chip">Giros y frenadas</span>
+          <span class="chip">Peligros en ruta</span>
+          <span class="chip">Ritmo y distancia</span>
+          <span class="chip">Formaciones</span>
+          <span class="chip">Paradas y avisos</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="notes checklist" aria-label="Chequeos antes de salir">
+        <h2>Antes de salir</h2>
+        <ul>
+          <li>Presión de neumáticos adecuada.</li>
+          <li>Luces y señaleros funcionando (alta, baja, freno, giro).</li>
+          <li>Frenos con recorrido firme.</li>
+          <li>Espejos ajustados a tu altura.</li>
+        </ul>
+      </section>
+
+      <section class="notes" aria-label="Buenas prácticas en ruta">
+        <h2>Notas de buena conducta en ruta</h2>
+        <ul>
+          <li>Revisa espejos y entorno con frecuencia; anticipa al grupo.</li>
+          <li>
+            Sigue al líder en un solo carril; no rompas la formación sin
+            permiso.
+          </li>
+          <li>
+            Adelantamientos: el líder decide, todos señalizan; el último abre
+            paso y cierra.
+          </li>
+          <li>Usa siempre las señas; no dependas del intercom.</li>
+          <li>Mantén la derecha y deja libre el carril izquierdo.</li>
+          <li>
+            La moto más rápida va al fondo para poder avisar emergencias al
+            líder.
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="grid"
+        id="signals-grid"
+        aria-label="Listado de señas para moteros"
+      ></section>
+
+      <section class="notes formations" aria-label="Formaciones en ruta">
+        <h2>Formaciones</h2>
+        <div class="formation">
+          <div class="formation__text">
+            <h3>Formación escalonada</h3>
+            <p>
+              Uso principal en rutas rectas. Mantén posición de zig-zag, sin ir
+              lado a lado. No adelantes dentro de la formación salvo que te den
+              paso.
+            </p>
+          </div>
+          <div
+            class="formation-diagram staggered"
+            aria-label="Diagrama formación escalonada"
+          >
+            <span class="rider lead">Líder</span>
+            <span class="rider">#2</span>
+            <span class="rider">#3</span>
+            <span class="rider">#4</span>
+            <span class="rider">#5</span>
+            <span class="rider">#6</span>
+          </div>
+        </div>
+
+        <div class="formation">
+          <div class="formation__text">
+            <h3>Fila única</h3>
+            <p>
+              En curvas o en ruta para usar todo el carril. No te pegues a al
+              que va delante ni rebases en curva. Solo adelanta si te señalan
+              que pases.
+            </p>
+          </div>
+          <div
+            class="formation-diagram single"
+            aria-label="Diagrama fila única"
+          >
+            <span class="rider lead">Líder</span>
+            <span class="rider">#2</span>
+            <span class="rider">#3</span>
+            <span class="rider">#4</span>
+            <span class="rider">#5</span>
+            <span class="rider">#6</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
